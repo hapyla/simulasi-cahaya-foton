@@ -1,0 +1,19 @@
+{
+  "name": "simulasi-cahaya",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "express": "^4.21.2",
+    "mongodb": "^6.12.0",
+    "multer": "^1.4.5-lts.1",
+    "sharp": "^0.33.5"
+  }
+}

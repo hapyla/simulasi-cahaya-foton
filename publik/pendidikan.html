@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendidikan - Energi Foton</title>
+    <link rel="stylesheet" href="styles-secondary.css">
+    <script type="text/javascript" async
+        src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js">
+    </script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Simulasi Cahaya</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="input-foto.html">Input Foto</a></li>
+                <li><a href="database.html">Database LED</a></li>
+                <li><a href="gamifikasi.html">Gamifikasi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Pendidikan: Energi Foton</h1>
+        <section>
+            <h2>Energi Foton</h2>
+            <p>
+                Energi foton adalah jumlah energi yang dibawa oleh sebuah foton, yang merupakan partikel dasar dari cahaya atau radiasi elektromagnetik. Foton tidak memiliki massa diam dan bergerak dengan kecepatan cahaya (sekitar 299.792.458 meter per detik di ruang hampa). Energi foton bergantung pada panjang gelombang atau frekuensi cahaya tersebut. Semakin pendek panjang gelombangnya (atau semakin tinggi frekuensinya), semakin besar energi foton tersebut.
+            </p>
+            <h3>Rumus untuk Menghitung Energi Foton:</h3>
+            <p>
+                Energi foton (\(E\)) dapat dihitung menggunakan rumus:
+            </p>
+            <p class="formula">\(E = h \cdot f\)</p>
+            <p>
+                Di mana:
+                <ul>
+                    <li>\(E\) adalah energi foton (dalam joule),</li>
+                    <li>\(h\) adalah konstanta Planck (\(6,626 \times 10^{-34} \, \text{J} \cdot \text{s}\)),</li>
+                    <li>\(f\) adalah frekuensi gelombang cahaya (dalam hertz).</li>
+                </ul>
+            </p>
+
+            <h3>Hubungan dengan Panjang Gelombang:</h3>
+            <p>
+                Karena frekuensi cahaya (\(f\)) dan panjang gelombang (\(\lambda\)) berhubungan dengan kecepatan cahaya \(c\) (yang selalu konstan dalam ruang hampa), kita dapat menulis:
+            </p>
+            <p class="formula">\(f = \frac{c}{\lambda}\)</p>
+            <p>
+                Dengan demikian, energi foton juga bisa dinyatakan dalam bentuk panjang gelombang sebagai:
+            </p>
+            <p class="formula">\(E = \frac{h \cdot c}{\lambda}\)</p>
+            <p>
+                Di mana:
+                <ul>
+                    <li>\(c\) adalah kecepatan cahaya (sekitar \(3,00 \times 10^8\) meter per detik),</li>
+                    <li>\(\lambda\) adalah panjang gelombang (dalam meter).</li>
+                </ul>
+            </p>
+        </section>
+
+        <section id="interaktif">
+            <h2>Simulasi Interaktif</h2>
+            <p>Pilih panjang gelombang untuk melihat energi foton dan warna yang terkait:</p>
+            <label for="wavelengthSlider">Panjang Gelombang (nm): </label>
+            <input id="wavelengthSlider" type="range" min="380" max="750" step="1" value="380">
+            <p>Panjang Gelombang: <span id="wavelengthValue">380</span> nm</p>
+            <p>Energi Foton: <span id="photonEnergy">0.00</span> eV</p>
+            <div id="colorPreview" style="width: 100px; height: 100px; background-color: violet; border: 1px solid #000;"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Simulasi Cahaya. Semua Hak Dilindungi.</p>
+    </footer>
+    <script src="pendidikan.js"></script>
+</body>
+</html>
